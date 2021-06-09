@@ -23,16 +23,20 @@
       text-align: center;
     }
 
-    a:link {
+    a[target] {
       color: black;
       font-size: 18px;
       text-decoration: none;
     }
 
-    a:hover {
+    nav>a:hover {
       color: blue;
       font-size: 20px;
       text-decoration: none;
+    }
+
+    a[target="_blank"] {
+      background-color: yellow;
     }
 
     body {
@@ -54,13 +58,19 @@
       margin: 30px;
       background-color: #ffffff;
       border: 1px solid black;
-      opacity: 0.6;
+      opacity: 0.7;
     }
 
     div.transbox h1 {
       margin: 5%;
       font-weight: bold;
       color: #000000;
+    }
+
+    h4,
+    h5,
+    h6 {
+      color: gray;
     }
 
     /* Header */
@@ -93,6 +103,10 @@
       padding-left: 20px;
     }
 
+    #center {
+      text-align: center;
+    }
+
     /* Image */
     .image {
       background-color: #aaa;
@@ -112,6 +126,11 @@
       content: "";
       display: table;
       clear: both;
+    }
+
+    .card .photoGallery {
+      padding: 20px;
+      background-color: #f1f1f1;
     }
 
     /* Footer */
@@ -134,11 +153,11 @@
   </div>
 
   <nav>
-    <a href="#recentPost" target="_blank">| Recent Post | </a>
-    <a href="#photos" target="_blank">| Photo Gallery | </a>
-    <a href="#favorite" target="_blank">| Favorite Parts | </a>
-    <a href="#moreOnJapan" target="_blank">| More on Japan | </a>
-    <a href="#studyAbroad" target="_blank">| Study Abroad | </a>
+    <a href="#recentPost" target>| Recent Post | </a>
+    <a href="#photos" target>| Photo Gallery | </a>
+    <a href="#favorite" target>| Favorite Parts | </a>
+    <a href="#moreOnJapan" target>| More on Japan | </a>
+    <a href="#studyAbroad" target>| Study Abroad | </a>
   </nav>
 
   <div class="row">
@@ -150,22 +169,24 @@
         <h4>Some text..</h4>
       </div>
 
-      <div class="card">
-        <h3 id="photos">Photo Gallery</h3>
-        <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-        <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
-        <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
-        <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-        <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
-        <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
-        <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-        <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
+      <div class="card" id="photos">
+        <div class="photoGallery">
+          <h3 id="center">Photo Gallery</h3>
+          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
+          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
+          <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
+          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
+          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
+          <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
+          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
+          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
+        </div>
       </div>
     </div>
 
     <div class="rightcolumn">
-      <div class="card">
-        <h3 id="favorite">Favorites</h3>
+      <div class="card" id="favorite">
+        <h3 id="center">Favorites</h3>
         <table style="width: 100%">
           <tr>
             <th>Locations</th>
@@ -194,11 +215,13 @@
       <div class="card">
         <h2 id="moreOnJapan">More on Japan</h2>
         <p>Japan</p>
+        <a href="#studyAbroad" target="_blank">Click here for more information.</a>
       </div>
 
       <div class="card">
         <h2 id="studyAbroad">Study Abroad</h2>
         <p>Study Abroad</p>
+        <a href="#studyAbroad" target="_blank">Click here for more information.</a>
       </div>
     </div>
   </div>
