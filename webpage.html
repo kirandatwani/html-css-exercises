@@ -24,7 +24,7 @@ nav {
 
 a:link {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 	text-decoration: none;
 }
 
@@ -73,6 +73,11 @@ div.transbox h1 {
   font-size: 50px;
 }
 
+.note {
+  color: red;
+  font-family: "Sofia", sans-serif;
+}
+
 /* Left column */
 .leftcolumn {   
   float: left;
@@ -110,9 +115,8 @@ div.transbox h1 {
 
 /* Footer */
 .footer {
-  padding: 1px;
-  text-align: center;
-  background: #ddd;
+  font-family: "Garamond", sans-serif;
+	text-align: center;
 }
 
 </style>
@@ -123,16 +127,17 @@ div.transbox h1 {
   
 <div class="header">
   <h1>Adventures Abroad</h1>
-  <h2>Bit-size adventures of my study abroad experience in Japan</h2>
+  <h2>Bit-size adventures of my <span class="note">study abroad experience</span> in Japan</h2>
 </div>
 </div>
 </div>
 
 <nav>
-  <a href="#one" target="_blank">| Recent Post | </a>
-  <a href="#" target="_blank">| Photo Gallery | </a>
-  <a href="#" target="_blank">| More on Japan | </a>
-    <a href="#" target="_blank">| Favorite Parts | </a>
+  <a href="#recentPost" target="_blank">| Recent Post | </a>
+  <a href="#photos" target="_blank">| Photo Gallery | </a>
+    <a href="#favorite" target="_blank">| Favorite Parts | </a>
+    <a href="#moreOnJapan" target="_blank">| More on Japan | </a>
+    <a href="#studyAbroad" target="_blank">| Study Abroad | </a>    
 </nav>
 
 <div class="row">
@@ -143,32 +148,49 @@ div.transbox h1 {
       <div class="fakeimg" style="height:200px;">Image</div>
       <h4>Some text..</h4>
     </div>
+    
     <div class="card">
-      <h3>Photo Gallery</h3>
+      <h3 id="photos">Photo Gallery</h3>
 	<img src="img_forest.jpg" alt="Forest" width="170" height="100">
 	<img src="img_mountains.jpg" alt="Mountains" width="170" height="100">
 	<img src="img_5terre.jpg" alt="Italy" width="170" height="100">
-
     </div>
   </div>
-  <div class="rightcolumn">
+  
+  <div class="rightcolumn">  
     <div class="card">
-      <h2>More on Japan</h2>
-      <p>Japan</p>
-    </div>
-    <div class="card">
-      <p>Favorite Places:</p>
-      <ul>
+    <h3 id="favorite">Favorites</h3>
+      <table style="width:100%">
+  <tr>
+    <th>Locations</th>
+    <th>Activities</th> 
+  </tr>
+  <tr>
+    <td>
+    <ul>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ul>  
-      <p>Favorite Activities:</p>
-      <ol>
+</td>
+<td><ol>
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
-</ol> 
+</ol> </td>
+  </tr>
+</table>
+
+    </div>
+
+<div class="card">
+      <h2 id="moreOnJapan">More on Japan</h2>
+      <p>Japan</p>
+    </div>
+    
+    <div class="card">
+      <h2 id="studyAbroad">Study Abroad</h2>
+      <p>Study Abroad</p>
     </div>
   </div>
 </div>
