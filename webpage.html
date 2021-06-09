@@ -14,6 +14,26 @@ h1 {
   font-family: "Sofia", sans-serif;
 }
 
+/* Style the top navigation bar */
+nav {
+  padding: 10px;
+  background: #f1f1f1;
+  font-family: "Garamond", sans-serif;
+  text-align: center;
+}
+
+a:link {
+    color: black;
+    font-size: 20px;
+	text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    font-size: 20px;
+	text-decoration: none;
+}
+
 body {
   font-family: "Garamond", sans-serif;
   padding: 10px;
@@ -108,11 +128,18 @@ div.transbox h1 {
 </div>
 </div>
 
+<nav>
+  <a href="#one" target="_blank">| Recent Post | </a>
+  <a href="#" target="_blank">| Photo Gallery | </a>
+  <a href="#" target="_blank">| More on Japan | </a>
+    <a href="#" target="_blank">| Favorite Parts | </a>
+</nav>
+
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Deers, Hiking, Souvenirs and more</h2>
-      <h5>Nara Park, Spring 2021</h5>
+      <h2 id="one">Deers, Hiking, Souvenirs and more</h2>
+      <h5>Nara Park, Spring 2020</h5>
       <div class="fakeimg" style="height:200px;">Image</div>
       <h4>Some text..</h4>
     </div>
