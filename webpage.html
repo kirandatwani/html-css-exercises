@@ -1,204 +1,208 @@
-<!-- This is a web page made entirely using HTML and CSS. --> 
+<!-- This is a web page made entirely using HTML and CSS. -->
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-h1 {
-  font-family: "Sofia", sans-serif;
-}
+    h1 {
+      font-family: "Sofia", sans-serif;
+    }
 
-/* Style the top navigation bar */
-nav {
-  padding: 10px;
-  background: #f1f1f1;
-  font-family: "Garamond", sans-serif;
-  text-align: center;
-}
+    /* Style the top navigation bar */
+    nav {
+      padding: 10px;
+      background: #f1f1f1;
+      font-family: "Garamond", sans-serif;
+      text-align: center;
+    }
 
-a:link {
-    color: black;
-    font-size: 18px;
-	text-decoration: none;
-}
+    a:link {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+    }
 
-a:hover {
-    color: blue;
-    font-size: 20px;
-	text-decoration: none;
-}
+    a:hover {
+      color: blue;
+      font-size: 20px;
+      text-decoration: none;
+    }
 
-body {
-  font-family: "Garamond", sans-serif;
-  padding: 10px;
-  background: #f1f1f1;
-}
+    body {
+      font-family: "Garamond", sans-serif;
+      padding: 10px;
+      background: #f1f1f1;
+    }
 
-img:hover {
-  opacity: 0.5;
-}
+    img:hover {
+      opacity: 0.5;
+    }
 
-div.background {
-  background: url(klematis.jpg) repeat;
-  border: 2px solid black;
-}
+    div.background {
+      background: url(klematis.jpg) repeat;
+      border: 2px solid black;
+    }
 
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-}
+    div.transbox {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.6;
+    }
 
-div.transbox h1 {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}
+    div.transbox h1 {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
 
-/* Header */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
+    /* Header */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: white;
+    }
 
-.header h1 {
-  font-size: 50px;
-}
+    .header h1 {
+      font-size: 50px;
+    }
 
-.note {
-  color: red;
-  font-family: "Sofia", sans-serif;
-}
+    .note {
+      color: red;
+      font-family: "Sofia", sans-serif;
+    }
 
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #f1f1f1;
+      padding-left: 20px;
+    }
 
-/* Image */
-.image {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+    /* Image */
+    .image {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Footer */
-.footer {
-  font-family: "Garamond", sans-serif;
-	text-align: center;
-}
-
-</style>
+    /* Footer */
+    .footer {
+      font-family: "Garamond", sans-serif;
+      text-align: center;
+    }
+  </style>
 </head>
-<body>
-<div class="background">
-  <div class="transbox">
-  
-<div class="header">
-  <h1>Adventures Abroad</h1>
-  <h2>Bit-size adventures of my <span class="note">study abroad experience</span> in Japan</h2>
-</div>
-</div>
-</div>
 
-<nav>
-  <a href="#recentPost" target="_blank">| Recent Post | </a>
-  <a href="#photos" target="_blank">| Photo Gallery | </a>
+<body>
+  <div class="background">
+    <div class="transbox">
+
+      <div class="header">
+        <h1>Adventures Abroad</h1>
+        <h2>Bit-size adventures of my <span class="note">study abroad experience</span> in Japan</h2>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#recentPost" target="_blank">| Recent Post | </a>
+    <a href="#photos" target="_blank">| Photo Gallery | </a>
     <a href="#favorite" target="_blank">| Favorite Parts | </a>
     <a href="#moreOnJapan" target="_blank">| More on Japan | </a>
-    <a href="#studyAbroad" target="_blank">| Study Abroad | </a>    
-</nav>
+    <a href="#studyAbroad" target="_blank">| Study Abroad | </a>
+  </nav>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2 id="one">Deers, Hiking, Souvenirs and more</h2>
-      <h5>Nara Park, Spring 2020</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <h4>Some text..</h4>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 id="one">Deers, Hiking, Souvenirs and more</h2>
+        <h5>Nara Park, Spring 2020</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <h4>Some text..</h4>
+      </div>
+
+      <div class="card">
+        <h3 id="photos">Photo Gallery</h3>
+        <img src="img_forest.jpg" alt="Forest" width="170" height="100">
+        <img src="img_mountains.jpg" alt="Mountains" width="170" height="100">
+        <img src="img_5terre.jpg" alt="Italy" width="170" height="100">
+      </div>
     </div>
-    
-    <div class="card">
-      <h3 id="photos">Photo Gallery</h3>
-	<img src="img_forest.jpg" alt="Forest" width="170" height="100">
-	<img src="img_mountains.jpg" alt="Mountains" width="170" height="100">
-	<img src="img_5terre.jpg" alt="Italy" width="170" height="100">
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h3 id="favorite">Favorites</h3>
+        <table style="width:100%">
+          <tr>
+            <th>Locations</th>
+            <th>Activities</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ul>
+            </td>
+            <td>
+              <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="card">
+        <h2 id="moreOnJapan">More on Japan</h2>
+        <p>Japan</p>
+      </div>
+
+      <div class="card">
+        <h2 id="studyAbroad">Study Abroad</h2>
+        <p>Study Abroad</p>
+      </div>
     </div>
   </div>
-  
-  <div class="rightcolumn">  
-    <div class="card">
-    <h3 id="favorite">Favorites</h3>
-      <table style="width:100%">
-  <tr>
-    <th>Locations</th>
-    <th>Activities</th> 
-  </tr>
-  <tr>
-    <td>
-    <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>  
-</td>
-<td><ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol> </td>
-  </tr>
-</table>
 
-    </div>
-
-<div class="card">
-      <h2 id="moreOnJapan">More on Japan</h2>
-      <p>Japan</p>
-    </div>
-    
-    <div class="card">
-      <h2 id="studyAbroad">Study Abroad</h2>
-      <p>Study Abroad</p>
-    </div>
+  <div class="footer">
+    <h6>This webpage is created by Kiran Datwani, 2021.</h6>
   </div>
-</div>
-
-<div class="footer">
-  <h6>This webpage is created by Kiran Datwani, 2021.</h6>
-</div>
 
 
 </body>
+
 </html>
