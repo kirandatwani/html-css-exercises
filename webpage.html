@@ -45,12 +45,7 @@
       background: #f1f1f1;
     }
 
-    img:hover {
-      opacity: 0.5;
-    }
-
     div.background {
-      background: url(klematis.jpg) repeat;
       border: 2px solid black;
     }
 
@@ -107,13 +102,6 @@
       text-align: center;
     }
 
-    /* Image */
-    .image {
-      background-color: #aaa;
-      width: 100%;
-      padding: 20px;
-    }
-
     /* Add a card effect for articles */
     .card {
       background-color: white;
@@ -163,23 +151,19 @@
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
-        <h2 id="one">Deers, Hiking, Souvenirs and more</h2>
-        <h5>Nara Park, Spring 2020</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <h4>Some text..</h4>
+        <h2 id="one">Sakura</h2>
+        <h5>Arima Onsen, Spring 2020</h5>
+        <img src="flower.jpg" alt="sakura flower" width=100% height=auto>
+        <h4>Sakura, also known as Cherry Blossoms, bloom in the springtime all around Japan.</h4>
       </div>
 
       <div class="card" id="photos">
         <div class="photoGallery">
           <h3 id="center">Photo Gallery</h3>
-          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
-          <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
-          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
-          <img src="img_5terre.jpg" alt="Italy" width=24% height=auto>
-          <img src="img_forest.jpg" alt="Forest" width=24% height=auto>
-          <img src="img_mountains.jpg" alt="Mountains" width=24% height=auto>
+          <img src="park.jpg" alt="light park" width=24% height=auto>
+          <img src="octopus.jpg" alt="garden park" width=24% height=auto>
+          <img src="kyoto.jpg" alt="kyoto" width=24% height=auto>
+          <img src="himeji.jpg" alt="himeji castle" width=24% height=auto>
         </div>
       </div>
     </div>
@@ -187,24 +171,34 @@
     <div class="rightcolumn">
       <div class="card" id="favorite">
         <h3 id="center">Favorites</h3>
-        <table style="width: 100%">
+        <table>
           <tr>
-            <th>Locations</th>
-            <th>Activities</th>
+            <th style="width: 50%">Locations</th>
+            <th style="width: 50%">Activities</th>
           </tr>
           <tr>
             <td>
               <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Kyoto</li>
+                <li>Osaka</li>
+                <li>Tokyo</li>
+                <li>Arima Onsen, Kobe</li>
+                <li>Nara Park</li>
+                <li>Ashikaga Flower Park</li>
+                <li>Hiroshima</li>
+                <li>Himeji Town</li>
+                <li>Awaji Island</li>
+
               </ul>
             </td>
             <td>
               <ol>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+                <li>Watching (Sakura) cherry blossoms [hanami]</li>
+                <li>Meeting new people</li>
+                <li>Sightseeing</li>
+
+                <li>Taking many, many pictures!</li>
+                <li>Traveling on trains</li>
               </ol>
             </td>
           </tr>
@@ -214,14 +208,19 @@
 
       <div class="card">
         <h2 id="moreOnJapan">More on Japan</h2>
-        <p>Japan</p>
-        <a href="#studyAbroad" target="_blank">Click here for more information.</a>
+        <p>Japan is an island country made up of 4 main islands (Hokkaido, Honshu, Shikoku, Kyushu) and a few thousand
+          smaller islands. Located in East Asia, it's a popular destination for many adventurous tourists. Japan is a
+          home for sushi, anime and traditional arts such as tea ceremonies, flower-arranging and calligraphy.</p>
+        <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Click here for more information.</a>
       </div>
 
       <div class="card">
         <h2 id="studyAbroad">Study Abroad</h2>
-        <p>Study Abroad</p>
-        <a href="#studyAbroad" target="_blank">Click here for more information.</a>
+        <p>I studied abroad in Kobe, Japan in Spring 2020 through the Study Abroad Center at UH Manoa. Studying abroad
+          is a great opportunity and experience, and I definitely recommend it if you are able to fit it into your
+          college schedule. There are several countries to travel to, languages to immerse in, and subjects to learn
+          along the way!</p>
+        <a href="https://www.studyabroad.hawaii.edu/" target="_blank">Click here for more information.</a>
       </div>
     </div>
   </div>
