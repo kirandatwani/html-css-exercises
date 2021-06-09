@@ -1,233 +1,127 @@
-<!-- This is a web page made entirely using HTML and CSS. -->
+<!-- Made in HTML. -->
 
 <!DOCTYPE html>
 <html>
 
+
+<!-- Head -->
+
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    h1 {
-      font-family: "Sofia", sans-serif;
-    }
-
-    /* Style the top navigation bar */
-    nav {
-      padding: 10px;
-      background: #f1f1f1;
-      font-family: "Garamond", sans-serif;
-      text-align: center;
-    }
-
-    a[target] {
-      color: black;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    nav>a:hover {
-      color: blue;
-      font-size: 20px;
-      text-decoration: none;
-    }
-
-    a[target="_blank"] {
-      background-color: yellow;
-    }
-
-    body {
-      font-family: "Garamond", sans-serif;
-      padding: 10px;
-      background: #f1f1f1;
-    }
-
-    div.background {
-      border: 2px solid black;
-    }
-
-    div.transbox {
-      margin: 30px;
-      background-color: #ffffff;
-      border: 1px solid black;
-      opacity: 0.7;
-    }
-
-    div.transbox h1 {
-      margin: 5%;
-      font-weight: bold;
-      color: #000000;
-    }
-
-    h4,
-    h5,
-    h6 {
-      color: gray;
-    }
-
-    /* Header */
-    .header {
-      padding: 30px;
-      text-align: center;
-      background: white;
-    }
-
-    .header h1 {
-      font-size: 50px;
-    }
-
-    .note {
-      color: red;
-      font-family: "Sofia", sans-serif;
-    }
-
-    /* Left column */
-    .leftcolumn {
-      float: left;
-      width: 75%;
-    }
-
-    /* Right column */
-    .rightcolumn {
-      float: left;
-      width: 25%;
-      background-color: #f1f1f1;
-      padding-left: 20px;
-    }
-
-    #center {
-      text-align: center;
-    }
-
-    /* Add a card effect for articles */
-    .card {
-      background-color: white;
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .card .photoGallery {
-      padding: 20px;
-      background-color: #f1f1f1;
-    }
-
-    /* Footer */
-    .footer {
-      font-family: "Garamond", sans-serif;
-      text-align: center;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
+
+<!-- Body -->
+
 <body>
-  <div class="background">
-    <div class="transbox">
+    <div class="background">
+        <div class="transbox">
 
-      <div class="header">
-        <h1>Adventures Abroad</h1>
-        <h2>Bit-size adventures of my <span class="note">study abroad experience</span> in Japan</h2>
-      </div>
-    </div>
-  </div>
-
-  <nav>
-    <a href="#recentPost" target>| Recent Post | </a>
-    <a href="#photos" target>| Photo Gallery | </a>
-    <a href="#favorite" target>| Favorite Parts | </a>
-    <a href="#moreOnJapan" target>| More on Japan | </a>
-    <a href="#studyAbroad" target>| Study Abroad | </a>
-  </nav>
-
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2 id="one">Sakura</h2>
-        <h5>Arima Onsen, Spring 2020</h5>
-        <img src="flower.jpg" alt="sakura flower" width=100% height=auto>
-        <h4>Sakura, also known as Cherry Blossoms, bloom in the springtime all around Japan.</h4>
-      </div>
-
-      <div class="card" id="photos">
-        <div class="photoGallery">
-          <h3 id="center">Photo Gallery</h3>
-          <img src="park.jpg" alt="light park" width=24% height=auto>
-          <img src="octopus.jpg" alt="garden park" width=24% height=auto>
-          <img src="kyoto.jpg" alt="kyoto" width=24% height=auto>
-          <img src="himeji.jpg" alt="himeji castle" width=24% height=auto>
+            <div class="header">
+                <h1>Adventures Abroad</h1>
+                <h2>Bit-size adventures of my <span class="note">study abroad experience</span> in Japan</h2>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="rightcolumn">
-      <div class="card" id="favorite">
-        <h3 id="center">Favorites</h3>
-        <table>
-          <tr>
-            <th style="width: 50%">Locations</th>
-            <th style="width: 50%">Activities</th>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>Kyoto</li>
-                <li>Osaka</li>
-                <li>Tokyo</li>
-                <li>Arima Onsen, Kobe</li>
-                <li>Nara Park</li>
-                <li>Ashikaga Flower Park</li>
-                <li>Hiroshima</li>
-                <li>Himeji Town</li>
-                <li>Awaji Island</li>
 
-              </ul>
-            </td>
-            <td>
-              <ol>
-                <li>Watching (Sakura) cherry blossoms [hanami]</li>
-                <li>Meeting new people</li>
-                <li>Sightseeing</li>
+    <!-- Navigation Bar and Links -->
 
-                <li>Taking many, many pictures!</li>
-                <li>Traveling on trains</li>
-              </ol>
-            </td>
-          </tr>
-        </table>
+    <nav>
+        <a href="#recentPost" target>| Recent Post | </a>
+        <a href="#photos" target>| Photo Gallery | </a>
+        <a href="#favorite" target>| Favorite Parts | </a>
+        <a href="#moreOnJapan" target>| More on Japan | </a>
+        <a href="#studyAbroad" target>| Study Abroad | </a>
+    </nav>
 
-      </div>
 
-      <div class="card">
-        <h2 id="moreOnJapan">More on Japan</h2>
-        <p>Japan is an island country made up of 4 main islands (Hokkaido, Honshu, Shikoku, Kyushu) and a few thousand
-          smaller islands. Located in East Asia, it's a popular destination for many adventurous tourists. Japan is a
-          home for sushi, anime and traditional arts such as tea ceremonies, flower-arranging and calligraphy.</p>
-        <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Click here for more information.</a>
-      </div>
+    <!-- Left columns, including main post and photo gallery. -->
 
-      <div class="card">
-        <h2 id="studyAbroad">Study Abroad</h2>
-        <p>I studied abroad in Kobe, Japan in Spring 2020 through the Study Abroad Center at UH Manoa. Studying abroad
-          is a great opportunity and experience, and I definitely recommend it if you are able to fit it into your
-          college schedule. There are several countries to travel to, languages to immerse in, and subjects to learn
-          along the way!</p>
-        <a href="https://www.studyabroad.hawaii.edu/" target="_blank">Click here for more information.</a>
-      </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2 id="one">Sakura</h2>
+                <h5>Arima Onsen, Spring 2020</h5>
+                <img src="flower.jpg" alt="sakura flower" width=100% height=auto>
+                <h4>Sakura, also known as Cherry Blossoms, bloom in the springtime all around Japan.</h4>
+            </div>
+
+            <div class="card" id="photos">
+                <div class="photoGallery">
+                    <h3 id="center">Photo Gallery</h3>
+                    <img src="park.jpg" alt="light park" width=24% height=auto>
+                    <img src="octopus.jpg" alt="garden park" width=24% height=auto>
+                    <img src="kyoto.jpg" alt="kyoto" width=24% height=auto>
+                    <img src="himeji.jpg" alt="himeji castle" width=24% height=auto>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Right columns, including favorites' post, Leaning more about Japan, and resources of the study abroad program at UH Manoa. -->
+
+        <div class="rightcolumn">
+            <div class="card" id="favorite">
+                <h3 id="center">Favorites</h3>
+                <table>
+                    <tr>
+                        <th style="width: 50%">Locations</th>
+                        <th style="width: 50%">Activities</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Kyoto</li>
+                                <li>Osaka</li>
+                                <li>Tokyo</li>
+                                <li>Arima Onsen, Kobe</li>
+                                <li>Nara Park</li>
+                                <li>Ashikaga Flower Park</li>
+                                <li>Hiroshima</li>
+                                <li>Himeji Town</li>
+                                <li>Awaji Island</li>
+
+                            </ul>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Watching (Sakura) cherry blossoms [hanami]</li>
+                                <li>Meeting new people</li>
+                                <li>Sightseeing</li>
+
+                                <li>Taking many, many pictures!</li>
+                                <li>Traveling on trains</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="card">
+                <h2 id="moreOnJapan">More on Japan</h2>
+                <p>Japan is an island country made up of 4 main islands (Hokkaido, Honshu, Shikoku, Kyushu) and a few thousand smaller islands. Located in East Asia, it's a popular destination for many adventurous tourists. Japan is a home for sushi, anime
+                    and traditional arts such as tea ceremonies, flower-arranging and calligraphy.</p>
+                <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Click here for more information.</a>
+            </div>
+
+            <div class="card">
+                <h2 id="studyAbroad">Study Abroad</h2>
+                <p>I studied abroad in Kobe, Japan in Spring 2020 through the Study Abroad Center at UH Manoa. Studying abroad is a great opportunity and experience, and I definitely recommend it if you are able to fit it into your college schedule. There
+                    are several countries to travel to, languages to immerse in, and subjects to learn along the way!</p>
+                <a href="https://www.studyabroad.hawaii.edu/" target="_blank">Click here for more information.</a>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <h6>This webpage is created by Kiran Datwani, 2021.</h6>
-  </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <h6>This webpage is created by Kiran Datwani, 2021.</h6>
+    </div>
 
 
 </body>
