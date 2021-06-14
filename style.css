@@ -76,10 +76,12 @@ div.transbox h1 {
 body {
     font-family: "Garamond", sans-serif;
     padding: 10px;
-    background: #f1f1f1;
 }
 
-h4,
+#backcolor {
+    background: rgb(248, 210, 226);
+}
+
 h5,
 h6 {
     color: gray;
@@ -94,8 +96,12 @@ h6 {
 
 .leftcolumn {
     float: left;
-    width: 75%;
-    padding: 10px;
+    width: 73%;
+    padding-right: 10px;
+}
+
+#text {
+    display: none;
 }
 
 
@@ -103,8 +109,8 @@ h6 {
 
 .rightcolumn {
     float: left;
-    width: 25%;
-    padding: 10px;
+    width: 27%;
+    padding-left: 10px;
 }
 
 

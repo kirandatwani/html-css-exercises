@@ -8,17 +8,33 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
+<script>
+    $(document).ready(function() {
+        $('.navbar-nav').hover(function() {
+            $('.navbar-nav').css("background-color", "pink");
+        }, function() {
+            $('.navbar-nav').css("background-color", "white");
+        });
+
+        $("#thisbutton").click(function() {
+            $("#text").show();
+        });
+
+        $("#notext").click(function() {
+            $("#text").hide();
+        });
+    });
+</script>
 
 <!-- Body -->
 
-<body>
+<body id="backcolor">
     <div class="background">
         <div class="transbox">
             <div class="header">
@@ -31,10 +47,10 @@
 
     <!-- Navigation Bar and Links -->
 
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="#recentPost" target>| Recent Post | </a>
+                <a class="nav-link" href="#" target>| Recent Post | </a>
                 <a class="nav-link" href="#photos" target>| Photo Gallery | </a>
                 <a class="nav-link" href="#favorite" target>| Favorite Parts | </a>
                 <a class="nav-link" href="#moreOnJapan" target>| More on Japan | </a>
@@ -51,10 +67,25 @@
             <div class="leftcolumn">
                 <div class="col-md-auto">
                     <div class="card">
-                        <h2 id="one">Sakura</h2>
-                        <h5>Arima Onsen, Spring 2020</h5>
-                        <img src="flower.jpg" alt="sakura flower" class="rounded" width=100% height=auto>
-                        <h4>Sakura, also known as Cherry Blossoms, bloom in the springtime all around Japan.</h4>
+                        <h4 id="one">Sakura</h2>
+                            <h6>Arima Onsen, Spring 2020</h6>
+                            <img src="flower.jpg" alt="sakura flower" class="rounded" width=100% height=auto>
+                            </br>
+                            <h5>Sakura, also known as Cherry Blossoms, bloom in the springtime all around Japan.</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-auto">
+                    <div class="card">
+                        <div>
+                            <button id="thisbutton" type="button">Click to see more posts</button>
+                        </div>
+
+                        <!-- Alert -->
+                        <div id="text" class="alert alert-info alert-dismissible" role="alert">
+                            Sorry, no more posts available at this time! Please come back later.
+                            <button id="notext" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
                     </div>
                 </div>
 
@@ -115,16 +146,16 @@
 
                 <div class="col-md-auto">
                     <div class="card">
-                        <h2 id="moreOnJapan">More on Japan</h2>
-                        <p>Japan is an island country made up of 4 main islands (Hokkaido, Honshu, Shikoku, Kyushu) and a few thousand smaller islands. Located in East Asia, it's a popular destination for many adventurous tourists. Japan is a home for sushi,
-                            anime and traditional arts such as tea ceremonies, flower-arranging and calligraphy.</p>
+                        <h3 id="moreOnJapan">More on Japan</h2>
+                            <p>Japan is an island country made up of 4 main islands (Hokkaido, Honshu, Shikoku, Kyushu) and a few thousand smaller islands. Located in East Asia, it's a popular destination for many adventurous tourists. Japan is a home for
+                                sushi, anime and traditional arts such as tea ceremonies, flower-arranging and calligraphy.</h3>
                         <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Click here for more information.</a>
                     </div>
                 </div>
 
                 <div class="col-md-auto">
                     <div class="card">
-                        <h2 id="studyAbroad">Study Abroad</h2>
+                        <h3 id="studyAbroad">Study Abroad</h3>
                         <p>I studied abroad in Kobe, Japan in Spring 2020 through the Study Abroad Center at UH Manoa. Studying abroad is a great opportunity and experience, and I definitely recommend it if you are able to fit it into your college schedule.
                             There are several countries to travel to, languages to immerse in, and subjects to learn along the way!
                         </p>
@@ -137,8 +168,9 @@
 
     <!-- Footer -->
     <div class="container">
-
         <div class="footer">
+            <br>
+            </br>
             <h6>This webpage is created by Kiran Datwani, 2021.</h6>
         </div>
     </div>
