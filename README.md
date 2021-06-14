@@ -1,4 +1,4 @@
-# html-css-exercises
+# html-css-js-exercises
 
 ---
 Create your first web page following the [HTML Exercises section](https://ee491f.github.io/course-material/#html-exercises).
@@ -44,5 +44,31 @@ Update your first web page to include the common selectors and properties by fol
   - [x] box model's border
   - [x] box model's margin
   - [x] box model's padding
+- [x] save your web page to a GitHub repository
+- [x] submit a link to your GitHub repository to Laulima
+
+
+---
+Update your first web page to use some jQuery features detailed in [JavaScript Exercises section](https://ee491f.github.io/course-material/#javascript-exercises)
+
+---
+##### Acceptance Criteria
+- [x] Add some jQuery code that:
+  - [x] selects some element(s) on the page
+  - [x] listens for an event to affect the selected element(s)
+  - [x] trigger some action to perform on the selected element(s)
+- [x] save your web page to a GitHub repository
+- [x] submit a link to your GitHub repository to Laulima
+
+
+---
+Update your first web page to use some Bootstrap features detailed in [JavaScript Exercises section](https://ee491f.github.io/course-material/#javascript-exercises)
+
+---
+##### Acceptance Criteria
+- [x] Layout your page using Bootstrap's [layout, container, & grid system](https://getbootstrap.com/docs/4.1/layout/grid/)
+- [x] Style the text on your page using Bootstrap's [Alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
+- [x] Add a [NavBar](https://getbootstrap.com/docs/4.1/components/navbar/) using Bootstrap
+- [x] Style some elements on your page using Bootstrap's [Borders](https://getbootstrap.com/docs/4.1/utilities/borders/)
 - [x] save your web page to a GitHub repository
 - [x] submit a link to your GitHub repository to Laulima
