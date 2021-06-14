@@ -39,6 +39,7 @@ h1 {
 
 div.background {
     border: 2px solid black;
+    background-color: rgb(247, 158, 173);
 }
 
 div.transbox {
@@ -94,6 +95,7 @@ h6 {
 .leftcolumn {
     float: left;
     width: 75%;
+    padding: 10px;
 }
 
 
@@ -102,8 +104,7 @@ h6 {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
+    padding: 10px;
 }
 
 
